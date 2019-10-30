@@ -1,7 +1,11 @@
 const express = require('express')
-require('./db/mongoose')
 const userRouter = require('./routers/user')
 const taskRouter = require('./routers/task')
+const dotenv = require('dotenv');
+dotenv.config({
+    path: 'config/dev.env'
+});
+require('./db/mongoose')
 
 const app = express()
 const port = process.env.PORT
