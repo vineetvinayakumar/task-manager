@@ -5,6 +5,3 @@ app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
 
-dotenv.config({
-    path: 'config/dev.env'
-});
